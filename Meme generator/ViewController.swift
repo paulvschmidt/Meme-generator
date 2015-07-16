@@ -9,17 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var memeDisplay: UIImageView!
+    var memes = [String]()
+    var memeNumber : UInt32 = 0
+    var doubleCheck = "pepe"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        memes = ["Pepe", "Grumpy Cat", "Doge", "Not Bad", "Troll Face"]
+        newMeme()
+        doubleCheck = memes[Int(memeNumber)]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func newMeme(){
+        memeNumber = arc4random_uniform(UInt32(5))
+        memeDisplay.image = UIImage(named: memes[Int(memeNumber)])
     }
-
-
+    @IBAction func onNewMemeTapped(sender: AnyObject) {
+        while doubleCheck == memes[Int(memeNumber)]{
+            newMeme()
+        }
+        doubleCheck = memes[Int(memeNumber)]
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "History"{
+        let dvc = segue.destinationViewController as! MemeHistoryViewController
+        dvc.name = memes[Int(memeNumber)]
+        }
+    }
 }
 

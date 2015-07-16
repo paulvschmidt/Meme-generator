@@ -14,6 +14,8 @@
 		DA037CD31B57F41A00FACAAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA037CD11B57F41A00FACAAA /* LaunchScreen.storyboard */; };
 		DA037CDE1B57F41A00FACAAA /* Meme_generatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA037CDD1B57F41A00FACAAA /* Meme_generatorTests.swift */; };
 		DA037CE91B57F41A00FACAAA /* Meme_generatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA037CE81B57F41A00FACAAA /* Meme_generatorUITests.swift */; };
+		DA037CF71B5801C100FACAAA /* MemeHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA037CF61B5801C100FACAAA /* MemeHistoryViewController.swift */; };
+		DA037CF91B580DB500FACAAA /* MemeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA037CF81B580DB500FACAAA /* MemeTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DA037CE41B57F41A00FACAAA /* Meme generatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meme generatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA037CE81B57F41A00FACAAA /* Meme_generatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme_generatorUITests.swift; sourceTree = "<group>"; };
 		DA037CEA1B57F41A00FACAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA037CF61B5801C100FACAAA /* MemeHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeHistoryViewController.swift; sourceTree = "<group>"; };
+		DA037CF81B580DB500FACAAA /* MemeTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				DA037CC81B57F41A00FACAAA /* AppDelegate.swift */,
-				DA037CCA1B57F41A00FACAAA /* ViewController.swift */,
 				DA037CCC1B57F41A00FACAAA /* Main.storyboard */,
+				DA037CCA1B57F41A00FACAAA /* ViewController.swift */,
+				DA037CF61B5801C100FACAAA /* MemeHistoryViewController.swift */,
+				DA037CF81B580DB500FACAAA /* MemeTestViewController.swift */,
 				DA037CCF1B57F41A00FACAAA /* Assets.xcassets */,
 				DA037CD11B57F41A00FACAAA /* LaunchScreen.storyboard */,
 				DA037CD41B57F41A00FACAAA /* Info.plist */,
@@ -256,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA037CCB1B57F41A00FACAAA /* ViewController.swift in Sources */,
+				DA037CF71B5801C100FACAAA /* MemeHistoryViewController.swift in Sources */,
+				DA037CF91B580DB500FACAAA /* MemeTestViewController.swift in Sources */,
 				DA037CC91B57F41A00FACAAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
